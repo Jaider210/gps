@@ -13,7 +13,7 @@ public class BuscadorIaApplication {
       SpringApplication.run(BuscadorIaApplication.class, args);
     }
     @GetMapping("/hello")
-    public String hello(@RequestParam(value = "name", defaultValue = "Hola") String name) {
+    public String hello(@RequestParam(value = "name", defaultValue = "Hola hola mundo") String name) {
       return String.format("Hello %s!", name);
     }
 }
